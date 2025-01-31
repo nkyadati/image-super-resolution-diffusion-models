@@ -114,12 +114,12 @@ python3 test.py -opt options/test/test_BI_DiffSR_x4.yml
 ```
 
 ## Results
-| Models/Metrics | PSNR     | SSIM    | LPIPS   | ClipiQA | MUSIQ    |
-| -------------- | -------- | ------- | ------- | ------- | -------- |
-| SinSR          | 24.59139 | 0.69949 | 0.15714 | 0.71062 | 71.96875 |
-| ResShift       | 25.57122 | 0.7327  | 0.15823 | 0.59917 | 71.84375 |
-| Bi-DiffSR      | 25.5606  | 0.73853 | 0.175   | 0.62165 | 67.59375 |
-| StableSR       | \-       | \-      | \-      | 0.6463  | 70.65344 |
+| Models/Metrics | PSNR     | SSIM    | LPIPS   | ClipiQA | MUSIQ    | Inference time|
+| -------------- | -------- | ------- | ------- | ------- | -------- | --------------|
+| SinSR          | 24.59139 | 0.69949 | 0.15714 | 0.71062 | 71.96875 | 2.47 seconds  |
+| ResShift       | 25.57122 | 0.7327  | 0.15823 | 0.59917 | 71.84375 | 3.3 seconds   |
+| Bi-DiffSR      | 25.5606  | 0.73853 | 0.175   | 0.62165 | 67.59375 | 20 seconds    |
+| StableSR       | \-       | \-      | \-      | 0.6463  | 70.65344 | 36 seconds    |
 
 Results on Urban100 Test dataset: https://drive.google.com/drive/folders/1AZGn8mAOsk9hTALHym73ACQJE3NRXXSb?usp=sharing. Results on more datasets will follow. 
 
