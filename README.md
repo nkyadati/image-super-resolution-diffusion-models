@@ -214,8 +214,17 @@ python test.py
 
 Results on Urban100 Test dataset: https://drive.google.com/drive/folders/1AZGn8mAOsk9hTALHym73ACQJE3NRXXSb?usp=sharing. Results on more datasets will follow. 
 
+## Examples
+From the quantitative metrics above, we find that SinSR is one of the better performing models that gives a good trade-off between quality and inference time. Here, we visualise a few results from SinSR and also present the corresponding ground-truth images. Generally speaking, there are a few artefacts and blurriness as you go further from the camera.
+| Ground-Truth             |  SinSR | Remarks|
+:-------------------------:|:-------------------------:|:-------------------------:
+![](assets/GT/img018_gt.png)  |  ![](assets/SinSr/img018x4_sinsr.png) | Details are missing on the leaves |
+![](assets/GT/img023_gt.png)  |  ![](assets/SinSr/img023x4_sinsr.png) | Colors on the top-left are blurred |
+![](assets/GT/img025_gt.png)  |  ![](assets/SinSr/img025x4_sinsr.png) | Except for artefacts on the top-right, all other details seem to be captured well |
+![](assets/GT/img033_gt.png)  |  ![](assets/SinSr/img033x4_sinsr.png) | There is some blurriness and a few artefacts on the top part of the image |
+
 ## ToDo:
-- [ ] In-depth qualitative analysis
+- [x] Qualitative analysis
 - [ ] Experiments on more datasets
 - [x] Include results from more research papers - PASD, etc.
 - [ ] Tools for visualisation of the results
